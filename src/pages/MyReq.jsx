@@ -10,7 +10,7 @@ const MyReq = () => {
 
   useEffect(() => {
     if (user?.email) {
-        fetch(`http://localhost:9000/myreq/${user?.email}`)
+        fetch(`${import.meta.env.VITE_API_URL}/myreq/${user?.email}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch posts');
@@ -23,9 +23,9 @@ const MyReq = () => {
 }, [user?.email]);
 
 const handleStatus = async (id, status) => {
-  console.log(id, status);
+  // console.log(id, status);
   try {
-    const response = await fetch(`http://localhost:9000/updatereq/${id}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/updatereq/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'

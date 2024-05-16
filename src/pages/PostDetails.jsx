@@ -21,7 +21,7 @@ const PostDetails = () => {
         if (user?.email === organizer?.email) {
             return toast.error('Action not permitted');
           }
-       console.log(user);
+    //    console.log(user);
         const form = event.target;
         const name = form.name.value;
         const title = form.title.value;
@@ -41,7 +41,7 @@ const PostDetails = () => {
         const req = {postId, name,title, thumbnail, category, description, email,organizer_email:organizer?.email, status,volunteers_needed, location,suggestion,deadline,organizer};
         console.table(req);
         try {
-            const response = await fetch('http://localhost:9000/req', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/req`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

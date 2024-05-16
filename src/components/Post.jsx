@@ -29,7 +29,9 @@ const Post = ({ needposts }) => {
                         </Link>
                     </div>
                 </div>
+                
             </div>
+           
         </div>
     );
 };

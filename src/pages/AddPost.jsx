@@ -38,7 +38,7 @@ const AddPost = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:9000/add', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/add`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

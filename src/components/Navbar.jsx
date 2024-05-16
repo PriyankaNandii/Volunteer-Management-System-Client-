@@ -23,7 +23,7 @@ const Navbar = () => {
           }
       }
       const { logOut, user } = useAuth();
-      console.log(user);
+    //   console.log(user);
     return (
         <div>
             <nav className="relative   ">
@@ -81,34 +81,18 @@ const Navbar = () => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <NavLink
   to='/'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-black  font-bold  dark:text-white' : ' text-black'}
+  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-gray-500 border-2 rounded-xl font-extrabold text-gray-500' : ' text-gray-500'}
  
 > Home
 </NavLink>
 
 
   <NavLink
-  to='/allcrafts'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-black border-2 font-bold text-black' : ' text-black'}
+  to='/allposts'
+  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-gray-500 border-2 rounded-xl font-extrabold text-gray-500' : ' text-gray-500'}
 
-> All Art & craft Items
+> Need Volunteer
 </NavLink>
-
-
-
-{/* <NavLink
-  to='/addcraft'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-[#2f7dfc] border-b-2 font-bold text-black' : ' text-black'}
- 
-> Add Craft Item
-</NavLink>
-
-<NavLink
-  to='/mycraft'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-[#2f7dfc] border-b-2 font-bold text-black' : ' text-black'}
-
-> My List
-</NavLink> */}
       
 
                         </ul>
@@ -135,26 +119,14 @@ const Navbar = () => {
 
   <NavLink
   to='/allposts'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-gray-500 border-b-2 font-bold text-gray-500' : ' text-gray-500'}
+  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-gray-500 border-2 rounded-xl font-extrabold text-gray-500' : ' text-gray-500'}
 
 > Need Volunteer
 </NavLink>
 
 
 
-{/* <NavLink
-  to='/addcraft'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-[#2f7dfc] border-b-2 font-bold text-gray-500' : ' text-gray-500'}
- 
-> Add Craft Item
-</NavLink>
 
-<NavLink
-  to='/mycraft'
-  className={({ isActive }) => isActive ? 'p-0.5 px-5 py-2 border-[#2f7dfc] border-b-2 font-bold text-gray-500' : ' text-gray-500'}
-
-> My List
-</NavLink> */}
                     </ul>
                 </div>
 

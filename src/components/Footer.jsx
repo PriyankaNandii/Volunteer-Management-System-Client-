@@ -44,9 +44,10 @@ const Footer = () => {
                             <p className="font-semibold  dark:text-white">Services</p>
 
                             <div className="flex flex-col items-start mt-5 space-y-2">
-                                <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Healthcare</a>
+                                <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">HEALTHCARE</a>
                                 <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">ENVIRONMENTAL CONSERVATION</a>
-                                <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Content Creation</a>
+                                <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">ANIMAL WELFARE</a>
+                                <a href="#" className=" transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">EDUCATION</a>
                             </div>
                         </div>
                         {/* <div>
@@ -83,7 +84,7 @@ const Footer = () => {
                         
                      
 
-                        <p className="mt-4 text-sm  sm:mt-0 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
+                        <p className="mt-4 text-sm  sm:mt-0 dark:text-gray-300">© Copyright 2024. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>

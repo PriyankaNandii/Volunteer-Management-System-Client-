@@ -20,7 +20,7 @@ const ManageMyPostPage = () => {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:9000/mypost/${user.email}`)
+            fetch(`${import.meta.env.VITE_API_URL}/mypost/${user.email}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch posts');
@@ -43,7 +43,7 @@ const ManageMyPostPage = () => {
             confirmButtonText: "Yes, delete it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:9000/post/${id}`, { method: "DELETE" })
+                fetch(`${import.meta.env.VITE_API_URL}/post/${id}`, { method: "DELETE" })
                     .then((res) => {
                         if (!res.ok) {
                             throw new Error("Failed to delete post");

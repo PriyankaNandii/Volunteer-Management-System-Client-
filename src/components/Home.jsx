@@ -8,7 +8,7 @@ import Posts from "./Posts";
 
 const Home = () => {
     const needpost = useLoaderData()
-    console.log(needpost);
+    // console.log(needpost);
     return (
         <div>
             <Banner />

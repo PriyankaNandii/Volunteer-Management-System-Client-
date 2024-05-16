@@ -11,7 +11,7 @@ const SocialLogin = () => {
    const handleSocialLogin = (socialProvider) => {
       socialProvider()
          .then((result) => {
-            console.log(result.user);
+            // console.log(result.user);
             if (result.user) {
                toast.success('Successfully LogIn', {
                   duration: 10, 

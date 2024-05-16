@@ -36,7 +36,7 @@ const Update = () => {
         const postData = { name,title, thumbnail, category, description, email,organizer_email:organizer?.email,volunteers_needed, location,deadline,organizer};
        
         try {
-            const response = await fetch(`http://localhost:9000/post/${_id}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/post/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

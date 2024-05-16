@@ -13,7 +13,7 @@ const PostReq = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:9000/postreq/${user?.email}`)
+      fetch(`${import.meta.env.VITE_API_URL}/postreq/${user?.email}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to fetch posts');
@@ -26,10 +26,10 @@ const PostReq = () => {
   }, [user?.email]);
 
   const handleStatus = async (id, preStatus, status) => {
-    console.log(id, preStatus, status);
+    // console.log(id, preStatus, status);
     if(preStatus === status) return toast.error("Already Progressing")
     try {
-      const response = await fetch(`http://localhost:9000/updatereq/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/updatereq/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ const PostReq = () => {
   
     if (confirmed.isConfirmed) {
       try {
-        const response = await fetch(`http://localhost:9000/postreq/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/postreq/${id}`, {
           method: 'DELETE',
         });
   
