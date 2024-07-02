@@ -1,45 +1,57 @@
-<!-- # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
-
-# ServeSync
-
-Welcome to ServeSync, your platform for connecting volunteers with meaningful opportunities to make a difference in their communities.
-
-Visit our live site: [VolunteerHub.com]
+## Project Overview
+- Concept: A user-friendly platform for managing volunteer opportunities.
+- Problem Solved: Streamlines the process of posting and finding volunteer opportunities.
+- User Roles: Allows users to create, update, and delete volunteer posts and volunteer for others' posts.
 
 ## Features
+- Volunteer Post Management:
+  - Create, update, and delete volunteer need posts.
+  - Track and manage volunteer requests.
+  - User-specific post management.
+- Responsive Design:
+  - Fully responsive for mobile, tablet, and desktop views.
+  - Clean and organized layout with customizable components.
+- Authentication and Security:
+  - Email/password-based authentication.
+  - JWT token for secure private routes.
+  - Conditional login/logout and profile display.
 
-- **Discover Opportunities:** Explore a wide range of volunteer opportunities from various organizations and causes.
-- **Easy Sign-Up:** Create your volunteer profile in minutes and start browsing projects that match your interests and skills.
-- **Flexible Scheduling:** Find volunteer opportunities that fit your schedule, whether it's a one-time event or a long-term commitment.
-- **Community Impact:** Track your volunteer hours and see the tangible impact you're making in your community.
-- **Connect with Organizations:** Build relationships with local nonprofits and community groups seeking dedicated volunteers like you.
+## Technologies Used
+- Frontend:
+  - React.js
+  - Tailwind CSS
+  - Daisy UI
+- Backend:
+  - Node.js
+  - Express.js
+- Database:
+  - MongoDB
+- Authentication:
+  - Firebase
+- Deployment:
+  - Vercel
 
-## How to Get Started
+How to Clone and Run Locally
+1. Clone the Repository:
+git clone https://github.com/your-username/volunteer-management-website.git
+cd volunteer-management-website
+2. Install dependencies for both frontend and backend:
 
-1. Visit [https://assignment-11-volunteer.web.app/].
-2. Click on the "Sign Up" button to create your volunteer profile.
-3. Browse through available volunteer opportunities or search for specific causes.
-4. Select a project that interests you and sign up to volunteer.
-5. Show up, make a difference, and be a part of something bigger than yourself!
+cd client
+npm install
+cd ../server
+npm install
+3. Set up environment variables:
 
-## Contributing
+ Create .env files in both client and server directories.
+Refer to .env.example files provided for necessary variables (e.g., Firebase config keys, MongoDB credentials).
 
-We welcome contributions from developers, designers, and volunteers who are passionate about improving the volunteer experience. If you have ideas for new features, bug fixes, or enhancements, please submit a pull request or open an issue on GitHub.
+4. Start the backend server:
 
+cd server
+npm start
+5. Start the frontend development server:
 
-## Stay Connected
-
-Stay updated with the latest news, volunteer opportunities, and community events by following us on social media:
-
-- Twitter: 
-- Facebook
-- Instagram:
-
-
+cd client
+npm start
