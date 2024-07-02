@@ -23,7 +23,7 @@ Visit our live site: [VolunteerHub.com]
 
 ## How to Get Started
 
-1. Visit [VolunteerHub.com].
+1. Visit [https://assignment-11-volunteer.web.app/].
 2. Click on the "Sign Up" button to create your volunteer profile.
 3. Browse through available volunteer opportunities or search for specific causes.
 4. Select a project that interests you and sign up to volunteer.
@@ -33,9 +33,6 @@ Visit our live site: [VolunteerHub.com]
 
 We welcome contributions from developers, designers, and volunteers who are passionate about improving the volunteer experience. If you have ideas for new features, bug fixes, or enhancements, please submit a pull request or open an issue on GitHub.
 
-## Support
-
-For any questions, feedback, or support inquiries, please contact our team at support@volunteerhub.com. We're here to help you make the most out of your volunteer experience!
 
 ## Stay Connected
 
