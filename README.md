@@ -1,3 +1,4 @@
+ServeSync ------Volunteer Management Website
 
 ## Project Overview
 - Concept: A user-friendly platform for managing volunteer opportunities.
